@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f6c881b-3853-4151-a852-6913a341bf43" name="Default Changelist" comment="" />
+    <list default="true" id="7f6c881b-3853-4151-a852-6913a341bf43" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Features/enviournment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Features/steps/HomePageStepDefination.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonBehaveFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonBehaveFramework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/Flight.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Flight.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/steps/FlightBooking.py" beforeDir="false" afterPath="$PROJECT_DIR$/Features/steps/CommonStepDefination.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,19 +19,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Features/Flight.feature">
+        <entry file="file://$PROJECT_DIR$/Features/steps/CommonStepDefination.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="119">
+              <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Features/enviournment.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GlobalSettings.properties">
+        <entry file="file://$PROJECT_DIR$/Features/Flight.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+            <state relative-caret-position="59">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -36,6 +52,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -51,10 +70,13 @@
         <option value="$PROJECT_DIR$/src/utils/ExcelHandler.py" />
         <option value="$PROJECT_DIR$/src/utils/CSVHandler.py" />
         <option value="$PROJECT_DIR$/src/utils/DatabaseQueryOperation.py" />
-        <option value="$PROJECT_DIR$/GlobalSettings.properties" />
-        <option value="$PROJECT_DIR$/Features/Flight.feature" />
-        <option value="$PROJECT_DIR$/Features/steps/FlightBooking.py" />
         <option value="$PROJECT_DIR$/behave.ini" />
+        <option value="$PROJECT_DIR$/GlobalSettings.properties" />
+        <option value="$PROJECT_DIR$/Features/steps/FlightBooking.py" />
+        <option value="$PROJECT_DIR$/Features/steps/HomePageStepDefination.py" />
+        <option value="$PROJECT_DIR$/Features/enviournment.py" />
+        <option value="$PROJECT_DIR$/Features/steps/CommonStepDefination.py" />
+        <option value="$PROJECT_DIR$/Features/Flight.feature" />
       </list>
     </option>
   </component>
@@ -63,6 +85,7 @@
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -76,6 +99,16 @@
               <item name="PythonBehaveFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonBehaveFramework" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PythonBehaveFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonBehaveFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="Features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonBehaveFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonBehaveFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -84,7 +117,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -157,7 +190,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3846154" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -166,13 +199,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Features/steps/tutorial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/steps/tutorial.py" />
     <entry file="file://$PROJECT_DIR$/.editorconfig" />
     <entry file="file://$PROJECT_DIR$/src/framework/WebDriverFactory.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -201,6 +228,13 @@
     <entry file="file://$PROJECT_DIR$/src/framework/Settings.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/GlobalSettings.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/behave.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -208,24 +242,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Features/steps/FlightBooking.py">
+    <entry file="file://$PROJECT_DIR$/Features/steps/HomePageStepDefination.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/steps/CommonStepDefination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/enviournment.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Features/Flight.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GlobalSettings.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        <state relative-caret-position="59">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
         </state>
       </provider>
     </entry>
