@@ -49,7 +49,7 @@ class WebDriverFactory:
             raise Exception(browser+" driver is not supported by the framework")
 
         '''
-        =============== Some Basic Settings ===============
+        =============== Some Basic Settings ============
         '''
         WebDriverFactory.driver.maximize_window()
 
