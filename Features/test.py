@@ -1,10 +1,11 @@
 from src.framework.WebDriverFactory import WebDriverFactory
+from src.framework.DatabaseConnectionFactory import DatabaseConnectionFactory
+from src.framework.LogHandler import LogHandler
+import logging
 
 
-driver = WebDriverFactory.get_driver()
+# LogHandler("C:\\Users\\vipin\\PycharmProjects\\PythonBehaveFramework\\output\\output.log")
+LogHandler.getInstance("C:\\Users\\vipin\\PycharmProjects\\PythonBehaveFramework\\output\\output.log")
 
-driver.get("http://blazedemo.com/")
-
-driver.quit()
-
-
+logger = logging.getLogger(__name__)
+logger.info("logger")

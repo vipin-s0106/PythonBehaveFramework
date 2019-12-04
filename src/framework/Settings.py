@@ -12,6 +12,6 @@ class Settings:
 
     @staticmethod
     def getProperty():
-        if Settings.properties == None:
+        if Settings.properties is None:
             Settings()
         return Settings.properties
