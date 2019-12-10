@@ -7,11 +7,11 @@ import traceback
 class WebDriverFactory:
     #creating the static driver
     driver = None
-    __initialised = None
+    __initialised = False
 
     @staticmethod
     def get_driver():
-        if WebDriverFactory.__initialised is None:
+        if WebDriverFactory.__initialised  == False:
             WebDriverFactory.sharedDriver()
         return WebDriverFactory.driver
 
@@ -57,6 +57,7 @@ class WebDriverFactory:
 
             # setting for each element to wait in seconds
             WebDriverFactory.driver.implicitly_wait(10)
+            WebDriverFactory.__initialised = True
         except Exception as e:
             traceback.print_stack()
             print(str(e))
@@ -65,3 +66,4 @@ class WebDriverFactory:
     @staticmethod
     def closeBrowser():
         WebDriverFactory.driver.quit()
+        WebDriverFactory.__initialised = False

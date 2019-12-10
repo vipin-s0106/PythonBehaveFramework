@@ -5,7 +5,7 @@ import logging
 
 
 # LogHandler("C:\\Users\\vipin\\PycharmProjects\\PythonBehaveFramework\\output\\output.log")
-LogHandler.getInstance("C:\\Users\\vipin\\PycharmProjects\\PythonBehaveFramework\\output\\output.log")
+# LogHandler("C:\\Users\\vipin\\PycharmProjects\\PythonBehaveFramework\\output\\output.log")
+#
+# LogHandler.logger.info("working from module")
 
-logger = logging.getLogger(__name__)
-logger.info("logger")
