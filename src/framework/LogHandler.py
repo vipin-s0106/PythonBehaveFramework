@@ -13,7 +13,7 @@ class LogHandler:
         with open(conf_path,'r') as file:
             content = file.readlines()
             file_path = file_path.replace("\\", "\\\\")
-            print(file_path)
+            # print(file_path)
             for line_no in range(len(content)):
                 if re.search("args=\('.*',", content[line_no]):
                     content[line_no] = "args=('" + file_path + "','a')\n"
@@ -27,8 +27,6 @@ class LogHandler:
         logging.config.fileConfig(conf_path)
 
         LogHandler.logger = logging.getLogger("root")
-
-        LogHandler.logger.info("Testing")
 
     @staticmethod
     def getLogger():

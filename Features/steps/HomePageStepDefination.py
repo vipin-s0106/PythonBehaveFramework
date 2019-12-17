@@ -1,4 +1,16 @@
 from behave import given,when,then
+from Features.GlobalVariable import global_dict
+from Features.steps.BaseClass import BaseClass
+
+from src.framework.LogHandler import LogHandler
+logger = LogHandler.getLogger()
+
+
+@given(u'I click on "{button}" with "{text}" "{FindFlights}"')
+def step_impl(context,button,text,FindFlights):
+    print("FindFlights")
+    BaseClass.common.click(button,text,"Find Flights")
+
 
 
 

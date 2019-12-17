@@ -12,10 +12,18 @@ class Common:
     wait = None
     action = None
 
-    def __init__(self,driver):
+    def __init__(self):
         Common.driver = WebDriverFactory.get_driver()
-        Common.wait = WebDriverWait(driver,20)
+        Common.wait = WebDriverWait(Common.driver,20)
         Common.action = ActionChains(Common.driver)
+
+
+    def navigate(self,URL):
+        try:
+            Common.driver.get(URL)
+        except Exception as e:
+            print("Not able to navigate to "+URL)
+            print(traceback.print_stack())
 
 
     def click(self,object,identifier,value):
@@ -203,7 +211,7 @@ class Common:
             print(traceback.print_stack())
 
 
-    def getScreenShot(self,filepath):
+    def takeScreenShot(self,filepath):
         try:
             fileprefix = filepath.split(".")[-1]
             if fileprefix in ["jpg","png","jpeg"]:
