@@ -19,7 +19,6 @@ class AbstractClass:
 
 
     def __init__(self):
-        logger.info("Configuring the Abstract class")
         AbstractClass.driver = WebDriverFactory.get_driver()
         AbstractClass.wait = WebDriverWait(AbstractClass.driver,20)
         AbstractClass.properties = Settings.getProperty()

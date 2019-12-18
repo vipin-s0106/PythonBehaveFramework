@@ -23,7 +23,7 @@ class WebDriverFactory:
             browser = properties.get("SETUP","BROWSER")
             print("Automation execution started on "+browser+" browser")
 
-            current_path = os.path.dirname(os.getcwd())
+            current_path = os.getcwd()
 
             if browser.upper() == "INTERNET EXPLORER":
                 internet_explorer_driver_path = current_path+"\\Driver\\IEDriverServer.exe"
@@ -59,7 +59,7 @@ class WebDriverFactory:
             WebDriverFactory.driver.implicitly_wait(10)
             WebDriverFactory.__initialised = True
         except Exception as e:
-            traceback.print_stack()
+            traceback.print_exc()
             print(str(e))
 
 

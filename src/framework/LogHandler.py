@@ -7,8 +7,8 @@ class LogHandler:
     logger = None
 
     def __init__(self,file_path):
-        conf_path = os.path.dirname(os.getcwd())+"\\config\\log_config.conf"
-
+        conf_path = os.getcwd()+"\\config\\log_config.conf"
+        print(conf_path)
         #Setting the log file path to configuration file
         with open(conf_path,'r') as file:
             content = file.readlines()

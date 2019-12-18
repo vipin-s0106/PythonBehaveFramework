@@ -32,5 +32,5 @@ class DatabaseConnectionFactory:
                 logger.info("Database Connection created successfully")
             return DatabaseConnectionFactory.connection
         except Exception as e:
-            traceback.print_tb()
+            traceback.print_exc()
             print(str(e))

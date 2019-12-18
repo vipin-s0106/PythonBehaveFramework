@@ -23,7 +23,7 @@ class Common:
             Common.driver.get(URL)
         except Exception as e:
             print("Not able to navigate to "+URL)
-            print(traceback.print_stack())
+            traceback.print_exc()
 
 
     def click(self,object,identifier,value):
@@ -41,11 +41,14 @@ class Common:
                 Common.driver.find_element_by_xpath(xpath).click()
             elif identifier.lower() == "xpath":
                 Common.driver.find_element_by_xpath(value).click()
+            elif identifier.lower() == "class":
+                xpath = "//*[@class='"+value+"']"
+                Common.driver.find_element_by_xpath(xpath).click()
             else:
                 raise Exception("Invalid Identifier - "+identifier)
         except Exception as e:
             print("Not able to click on "+str(object)+" using identifier "+identifier+" with value "+value)
-            print(traceback.print_stack())
+            traceback.print_exc()
 
 
 
@@ -64,7 +67,7 @@ class Common:
                 raise Exception("Invalid Identifier - "+identifier)
         except Exception as e:
             print("Not able to enter text for "+str(object)+" using identifier "+identifier+" with value "+value)
-            print(traceback.print_stack())
+            traceback.print_exc()
 
 
 
@@ -88,7 +91,7 @@ class Common:
 
         except Exception as e:
             print("Not able to double click for "+str(object)+" using identifier "+identifier+" with value "+value)
-            print(traceback.print_stack())
+            traceback.print_exc()
 
 
 
@@ -114,7 +117,7 @@ class Common:
 
         except Exception as e:
             print("Not able to verify "+str(object)+" using identifier "+identifier+" with value "+value)
-            print(traceback.print_stack())
+            traceback.print_exc()
 
 
 
@@ -142,7 +145,7 @@ class Common:
 
         except Exception as e:
             print("Not able to double click for "+str(object1)+" using identifier "+identifier1+" with value "+value1)
-            print(traceback.print_stack())
+            traceback.print_exc()
 
 
 
@@ -150,14 +153,13 @@ class Common:
         try:
             return Common.driver.current_url
         except Exception as e:
-            print(traceback.print_stack())
-
+            traceback.print_exc()
 
     def getTitle(self):
         try:
             return Common.driver.title
         except Exception as e:
-            print(traceback.print_stack())
+            traceback.print_exc()
 
 
     def SwitchToFrame(self,identifier,value):
@@ -177,7 +179,7 @@ class Common:
 
         except Exception as e:
             print("Not able to switch frame for identifier " + identifier + " with value " + value)
-            print(traceback.print_stack())
+            traceback.print_exc()
 
 
 
@@ -185,7 +187,7 @@ class Common:
         try:
             Common.driver.default_content()
         except Exception as e:
-            print(traceback.print_stack())
+            traceback.print_exc()
 
 
     def getElementText(self,object,identifier,value):
@@ -208,16 +210,16 @@ class Common:
 
         except Exception as e:
             print("Not able to find "+str(object)+" using identifier "+identifier+" with value "+value)
-            print(traceback.print_stack())
+            traceback.print_exc()
 
 
     def takeScreenShot(self,filepath):
         try:
             fileprefix = filepath.split(".")[-1]
-            if fileprefix in ["jpg","png","jpeg"]:
+            if fileprefix in ["png"]:
                 Common.driver.save_screenshot(filepath)
             else:
-                raise Exception("Invalid File Format - "+fileprefix)
+                raise Exception("name used for saved screenshot does not match file type.It should end with a `.png` extension")
         except Exception as e:
-            print("Not able to take the screenshot")
-            print(traceback.print_stack())
+            print(str(e))
+            traceback.print_exc()

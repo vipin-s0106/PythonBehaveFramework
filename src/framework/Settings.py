@@ -5,7 +5,7 @@ class Settings:
     properties = None
 
     def __init__(self):
-        current_path = os.path.dirname(os.getcwd())
+        current_path = os.getcwd()
         Settings.properties = configparser.RawConfigParser()
         Settings.properties.read(current_path+"\\GlobalSettings.properties")
 

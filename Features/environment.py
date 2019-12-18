@@ -3,7 +3,8 @@ import os
 import sys
 
 #Adding all the Path to system path so that everthing can be accessible in each module
-path = os.path.dirname(os.getcwd())
+path = os.getcwd()
+print(path)
 sys.path.append(path+"\\")
 sys.path.append(path+"\\Features\\")
 
@@ -12,7 +13,7 @@ from src.framework.LogHandler import LogHandler
 from Features.GlobalVariable import global_dict
 
 #Creating Timestamp Folder
-path = os.path.dirname(os.getcwd())+"\\output"
+path = os.getcwd()+"\\output"
 current_timestamp = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
 output_path = os.path.join(path,current_timestamp)
 os.makedirs(output_path)
@@ -33,8 +34,6 @@ def before_all(context):
     #Configuring the Behave framework
     logger.info("Configuring the behave framework")
     BaseClass()
-
-
 
 
 def after_all(context):
