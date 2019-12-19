@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7f6c881b-3853-4151-a852-6913a341bf43" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Flight.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Flight.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Features/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/steps/BaseClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Features/steps/BaseClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/steps/CommonStepDefination.py" beforeDir="false" afterPath="$PROJECT_DIR$/Features/steps/CommonStepDefination.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/steps/HomePageStepDefination.py" beforeDir="false" afterPath="$PROJECT_DIR$/Features/steps/HomePageStepDefination.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GlobalSettings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/GlobalSettings.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/log_config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/log_config.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/DatabaseConnectionFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/DatabaseConnectionFactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/LogHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/LogHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/Settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/Settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/WebDriverFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/WebDriverFactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/po/AbstractClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/po/AbstractClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/po/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/po/HomePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Common.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Common.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,29 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/output/2019_12_18_22_46_05/output.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="204">
-              <caret line="12" column="67" lean-forward="true" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Features/steps/CommonStepDefination.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="60" column="74" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,6 +60,7 @@
         <option value="$PROJECT_DIR$/src/po/HomePage.py" />
         <option value="$PROJECT_DIR$/Features/Flight.feature" />
         <option value="$PROJECT_DIR$/Features/steps/CommonStepDefination.py" />
+        <option value="$PROJECT_DIR$/output/2019_12_18_22_46_05/output.log" />
       </list>
     </option>
   </component>
@@ -272,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576606341163</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Common.py developed">
+      <created>1576689605415</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576689605415</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -286,7 +258,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19866072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -315,7 +286,8 @@
     <MESSAGE value="WebDriverFactory Developed" />
     <MESSAGE value="LogHandler issue" />
     <MESSAGE value="Common.py developed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Common.py developed" />
+    <MESSAGE value="framework developed" />
+    <option name="LAST_COMMIT_MESSAGE" value="framework developed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Features/steps/tutorial.py" />
@@ -579,20 +551,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/2019_12_18_22_46_05/output.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="204">
-          <caret line="12" column="67" lean-forward="true" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Features/steps/CommonStepDefination.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="1020">
           <caret line="60" column="74" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/2019_12_18_22_46_05/output.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="204">
+          <caret line="12" column="67" lean-forward="true" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
         </state>
       </provider>
     </entry>
