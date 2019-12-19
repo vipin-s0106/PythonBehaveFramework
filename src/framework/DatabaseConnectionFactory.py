@@ -34,3 +34,8 @@ class DatabaseConnectionFactory:
         except Exception as e:
             traceback.print_exc()
             print(str(e))
+
+
+    @staticmethod
+    def getResultset(connection,query):
+        pass
