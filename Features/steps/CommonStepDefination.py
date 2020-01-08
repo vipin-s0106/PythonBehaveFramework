@@ -2,11 +2,15 @@ from behave import given,when,then
 import time
 from Features.GlobalVariable import global_dict
 from Features.steps.BaseClass import BaseClass
-
+from src.framework.CSVReporting import CSVReporting
 
 from src.framework.LogHandler import LogHandler
 logger = LogHandler.getLogger()
 
+
+@given(u'I am running "{testcase_id}" testcase')
+def step_impl(context,testcase_id):
+    CSVReporting.testcase_id = testcase_id
 
 @given(u'I navigated to the "{URL}" page')
 def step_impl(context,URL):
