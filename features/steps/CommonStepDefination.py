@@ -1,28 +1,35 @@
 from behave import given,when,then
 import time
-from Features.GlobalVariable import global_dict
-from Features.steps.BaseClass import BaseClass
+from features.GlobalVariable import global_dict
+from features.steps.BaseClass import BaseClass
 from src.framework.CSVReporting import CSVReporting
 
 from src.framework.LogHandler import LogHandler
 logger = LogHandler.getLogger()
 
 
+@then(u'I am running "{testcase_id}" testcase')
 @given(u'I am running "{testcase_id}" testcase')
 def step_impl(context,testcase_id):
     CSVReporting.testcase_id = testcase_id
+    logger.info("Running "+str(testcase_id)+" testcase ID")
 
+
+
+@then(u'I navigated to the "{URL}" page')
 @given(u'I navigated to the "{URL}" page')
 def step_impl(context,URL):
     BaseClass.common.navigate(BaseClass.properties.get("URL",URL))
     logger.info("Navigating to - '"+BaseClass.properties.get("URL",URL)+"'")
 
 
+@then(u'I verified the "{URL}" page is opened')
 @given('I verified the "{URL}" page is opened')
 def step_impl(context,URL):
     url = BaseClass.common.getCurrentURL()
     assert url == BaseClass.properties.get("URL",URL)
     logger.info("URL '"+BaseClass.properties.get("URL",URL)+"' is verified")
+
 
 
 @given(u'I wait for "{wait_time}" second')

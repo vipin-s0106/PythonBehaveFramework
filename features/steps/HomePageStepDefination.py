@@ -1,6 +1,6 @@
 from behave import given,when,then
-from Features.GlobalVariable import global_dict
-from Features.steps.BaseClass import BaseClass
+from features.GlobalVariable import global_dict
+from features.steps.BaseClass import BaseClass
 
 
 from src.framework.LogHandler import LogHandler

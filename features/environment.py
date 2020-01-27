@@ -6,13 +6,13 @@ from src.framework.CSVReporting import CSVReporting
 
 #Adding all the Path to system path so that everthing can be accessible in each module
 path = os.getcwd()
-print(path)
+#print(path)
 sys.path.append(path+"\\")
 sys.path.append(path+"\\Features\\")
 
 #importing the module
 from src.framework.LogHandler import LogHandler
-from Features.GlobalVariable import global_dict
+from features.GlobalVariable import global_dict
 
 #Creating Timestamp Folder
 path = os.getcwd()+"\\output"
@@ -26,7 +26,7 @@ LogHandler(os.path.join(output_path,"output.log"))
 logger = LogHandler.getLogger()
 
 #Don't move the below import statement
-from Features.steps.BaseClass import BaseClass
+from features.steps.BaseClass import BaseClass
 from src.framework.WebDriverFactory import WebDriverFactory
 
 

@@ -1,4 +1,4 @@
-from Features.GlobalVariable import global_dict
+from features.GlobalVariable import global_dict
 
 from src.framework.LogHandler import LogHandler
 logger = LogHandler.getLogger()
