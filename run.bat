@@ -15,6 +15,7 @@ cd result
 move *.json %current_dir%\output\%LATEST_FOLDER%
 cd..
 
+
 ::Generate the Allure report
 cd %current_dir%\output
 %current_dir%\Lib\allure-2.7.0\bin\allure serve %LATEST_FOLDER%
